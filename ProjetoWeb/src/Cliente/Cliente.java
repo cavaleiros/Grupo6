@@ -24,29 +24,6 @@ public class Cliente {
 		this.fone = fone;
 	}
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getLogin() {
-		return login;
-	}
-
-	public void setLogin(String login) {
-		this.login = login;
-	}
-
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
 
 	public void setId(int id) {
 		this.id = id;
@@ -54,17 +31,11 @@ public class Cliente {
 
 	private String nome;
 	private String fone;
-	private String email;
-	private String login;
-	private String senha;
 
-	public Cliente(int id, String nome, String fone, String email,String login, String senha) {
+	public Cliente(int id, String nome, String fone) {
 		this.id = id;
 		this.nome = nome;
 		this.fone = fone;
-		this.email = email;
-		this.login = login;
-		this.senha = senha;
 	}
 
 	public int getId() {
@@ -78,9 +49,6 @@ public class Cliente {
 		to.setId(id);
 		to.setNome(nome);
 		to.setFone(fone);
-		to.setEmail(email);
-		to.setLogin(login);
-		to.setSenha(senha);
 		dao.incluir(to);
 	}
 
@@ -90,9 +58,6 @@ public class Cliente {
 		to.setId(id);
 		to.setNome(nome);
 		to.setFone(fone);
-		to.setEmail(email);
-		to.setLogin(login);
-		to.setSenha(senha);
 		dao.atualizar(to);
 	}
 
@@ -108,26 +73,19 @@ public class Cliente {
 		ClienteTO to = dao.carregar(id);
 		nome = to.getNome();
 		fone = to.getFone();
-		to.setEmail(email);
-		to.setLogin(login);
-		to.setSenha(senha);
-	}
+}
 	
 	public void alterar() {
 		ClienteDAO dao = new ClienteDAO();
 		ClienteTO to = dao.alterar(id);
 		nome = to.getNome();
 		fone = to.getFone();
-		to.setEmail(email);
-		to.setLogin(login);
-		to.setSenha(senha);
-	}
+}
 	
 	@Override
 	public String toString() {
 		return "Cliente [id=" + id + ", nome=" + nome + ", fone="
-	+ fone + ", e-mail=" + email + ", login=" + login + ", senha=" 
-				+ senha + "]";
+	+ fone + "]";
 	}
 
 	@Override
@@ -150,21 +108,6 @@ public class Cliente {
 			if (other.nome != null)
 				return false;
 		} else if (!nome.equals(other.nome))
-			return false;
-		if (email == null) {
-			if (other.email != null)
-				return false;
-		} else if (!email.equals(other.email))
-			return false;
-		if (login == null) {
-			if (other.login != null)
-				return false;
-		} else if (!login.equals(other.login))
-			return false;
-		if (senha == null) {
-			if (other.senha != null)
-				return false;
-		} else if (!senha.equals(other.senha))
 			return false;
 		return true;
 		

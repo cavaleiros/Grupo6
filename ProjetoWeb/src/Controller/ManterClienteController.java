@@ -45,17 +45,13 @@ public class ManterClienteController extends HttpServlet {
 		
 		String pAcao = request.getParameter("acao");
 		String pid = request.getParameter("id");
-		String email = request.getParameter("email");
 		String nome = request.getParameter("nome");
 		String fone = request.getParameter("fone");
-		String login = request.getParameter("login");
-		String senha = request.getParameter("senha");
 		int id = -1;
 		try {
 		id = Integer.parseInt(pid);
 		} catch (NumberFormatException e) {
-		}
-		Cliente cliente = new Cliente( id,nome, fone, email,login,senha);
+		Cliente cliente = new Cliente( id,nome, fone);
 		if (pAcao.equals("Inserir")) {
 		sqlInsert = "INSERT into cliente values(?,?,?)";
 		cliente.criar();
@@ -76,11 +72,12 @@ public class ManterClienteController extends HttpServlet {
 		}else if (pAcao.equals("Atualizar")) {
 			cliente.atualizar();
 		}
+		
 		try {
 			cliente.carregar();
-		} catch (SQLException e) {
+		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e1.printStackTrace();
 		}
 		ClienteTO to = new ClienteTO();
 		to.setId(cliente.getId());
@@ -91,4 +88,5 @@ public class ManterClienteController extends HttpServlet {
 		request.getRequestDispatcher("formulario.jsp");
 		view.forward(request, response);
 	}
+}
 }

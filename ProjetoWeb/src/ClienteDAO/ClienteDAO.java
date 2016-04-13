@@ -25,15 +25,12 @@ public class ClienteDAO {
 	}
 
 	public void atualizar(ClienteTO to) {
-		String sqlUpdate = "UPDATE cliente SET nome=?, fone=?, email, senha, login WHERE id=?";
+		String sqlUpdate = "UPDATE cliente SET nome=?, fone=? WHERE id=?";
 		// usando o try with resources do Java 7, que fecha o que abriu
 		try (Connection conn = ConnectionFactory.obtemConexao();
 				PreparedStatement stm = conn.prepareStatement(sqlUpdate);) {
 			stm.setString(1, to.getNome());
 			stm.setString(2, to.getFone());
-			stm.setString(2, to.getEmail());
-			stm.setString(2, to.getSenha());
-			stm.setString(2, to.getLogin());
 			stm.setInt(3, to.getId());
 			stm.execute();
 		} catch (Exception e) {
@@ -55,7 +52,7 @@ public class ClienteDAO {
 
 	public ClienteTO carregar(int id) throws SQLException {
 		ClienteTO to = new ClienteTO();
-		String sqlSelect = "SELECT nome, fone, email, senha, login FROM cliente WHERE cliente.id = ?";
+		String sqlSelect = "SELECT nome, fone, FROM cliente WHERE cliente.id = ?";
 		// usando o try with resources do Java 7, que fecha o que abriu
 		try (Connection conn = ConnectionFactory.obtemConexao();
 				PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
@@ -64,9 +61,6 @@ public class ClienteDAO {
 				if (rs.next()) {
 					to.setNome(rs.getString("nome"));
 					to.setFone(rs.getString("fone"));
-					to.setEmail(rs.getString("email"));
-					to.setSenha(rs.getString("senha"));
-					to.setLogin(rs.getString("login"));
 				}
 			}
 		}
@@ -77,7 +71,7 @@ public class ClienteDAO {
 	}
 				public ClienteTO alterar(int id) {
 					ClienteTO to = new ClienteTO();
-					String sqlSelect = "SELECT nome, fone, email, senha, login FROM cliente WHERE exercicio.id_cliente = ?";
+					String sqlSelect = "SELECT nome, fone FROM cliente WHERE exercicio.id_cliente = ?";
 					// usando o try with resources do Java 7, que fecha o que abriu
 					try (Connection conn = ConnectionFactory.obtemConexao();
 							PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
@@ -86,9 +80,6 @@ public class ClienteDAO {
 							if (rs.next()) {
 								to.setNome(rs.getString("nome"));
 								to.setFone(rs.getString("fone"));
-								to.setEmail(rs.getString("email"));
-								to.setSenha(rs.getString("senha"));
-								to.setLogin(rs.getString("login"));
 							}				
 			} catch (SQLException e) {
 				e.printStackTrace();
