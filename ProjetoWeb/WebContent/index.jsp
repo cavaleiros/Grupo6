@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,17 +22,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<!-- header-section-starts -->
 	<div class="full">
-	<c:import url="menu.jsp" />
+			<div class="menu">
+				<ul>
+					<li><a class="active" href="index.html"><i class="home"></i></a></li>
+					<li><a href="videos.html"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
+					<li><a href="reviews.html"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
+					<li><a href="404.html"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
+					<li><a href="contact.html"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
+				</ul>
+			</div>
 		<div class="main">
 		<div class="header">
 			<div class="top-header">
 				<div class="logo">
 					<a href="index.html"><img src="images/logo.png" alt="" /></a>
-					<p>Movie Theater</p>
 				</div>
 				<div class="search">
 					<form>
-						<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search..';}"/>
+						<input type="text" value="" Placeholder="Pesquisar..." />
 						<input type="submit" value="">
 					</form>
 				</div>
@@ -39,13 +47,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="header-info">
 				<h1>BIG HERO 6</h1>
-				<p class="age"><a href="#">All Age</a> Don Hall, Chris Williams</p>
-				<p class="review">Rating	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;  8,5/10</p>
-				<p class="review reviewgo">Genre	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; Animation, Action, Comedy</p>
-				<p class="review">Release &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp; 7 November 2014</p>
+				<p class="age"><a href="#">Livre</a> Don Hall, Chris Williams</p>
+				<p class="review">Nota	:   8,5/10</p>
+				<p class="review reviewgo">Genero	: Animação, Ação, Comédia</p>
+				<p class="review">Lançamento: 7 Novembro 2014</p>
 				<p class="special">The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.</p>
-				<a class="video" href="#"><i class="video1"></i>WATCH TRAILER</a>
-				<a class="book" href="#"><i class="book1"></i>BOOK TICKET</a>
+				<a class="book" href="#"><i class="book1"></i>Comprar Agora</a>
+				<a class="video" href="#"><i class="video1"></i>Assista o Trailer</a>
 			</div>
 		</div>
 		<div class="review-slider">
@@ -86,30 +94,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>
-		<div class="video">
-			<iframe  src="https://www.youtube.com/embed/2LqzF5WauAw" frameborder="0" allowfullscreen></iframe>
-		</div>
+		
 		<div class="news">
 			<div class="col-md-6 news-left-grid">
-				<h3>Don’t be late,</h3>
-				<h2>Book your ticket now!</h2>
-				<h4>Easy, simple & fast.</h4>
-				<a href="#"><i class="book"></i>BOOK TICKET</a>
-				<p>Get Discount up to <strong>10%</strong> if you are a member!</p>
+				<h3>Não deixe para depois,</h3>
+				<h2>Compre agora seu filme!</h2>
+				<h4>Fácil, Simples e Rápido.</h4>
+				<a href="#"><i class="book"></i>Comprar Agora</a>
+				<p>Desconto de  <strong>30%</strong> em sua primeira compra!</p>
 			</div>
 			<div class="col-md-6 news-right-grid">
-				<h3>News</h3>
+				<h3>Notícias</h3>
 				<div class="news-grid">
-					<h5>Lorem Ipsum Dolor Sit Amet</h5>
-					<label>Nov 11 2014</label>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+					<h5>Punho de ferro - mais dois atores são confirmados na série.</h5>
+					<label> 18 Abril 2016</label>
+					<p>De acordo com a Variety, a Marvel acaba de confirmar mais dois nomes no elenco da nova série do estúdio em parceria com a Netflix.<br>
+					Os escolhidos são Jessica Stroup e Tom Pelphrey</p>
 				</div>
 				<div class="news-grid">
-					<h5>Lorem Ipsum Dolor Sit Amet</h5>
-					<label>Nov 11 2014</label>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+					<h5>Doutor Estranho - Marvel finalmente lança o primeiro trailer oficial do filme</h5>
+					<label>18 Abril 2016</label>
+					<p>Beneditch Cumberbatch estrela o filme com o Dr. Estranho.<br>Dr.Estranho estreia no dia 03 de Novembro deste ano!</p>
 				</div>
-				<a class="more" href="#">MORE</a>
+				<a class="more" href="#">Veja Mais</a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -149,14 +156,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>	
-	<div class="footer">
-		<h6>Disclaimer : </h6>
-		<p class="claim">This is a freebies and not an official website, I have no intention of disclose any movie, brand, news.My goal here is to train or excercise my skill and share this freebies.</p>
-		<a href="example@mail.com">example@mail.com</a>
-		<div class="copyright">
-			<p> Template by  <a href="http://w3layouts.com">  W3layouts</a></p>
-		</div>
-	</div>	
+		
 	</div>
 	</div>
 	<div class="clearfix"></div>
