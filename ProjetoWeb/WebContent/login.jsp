@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html>
 <html>
@@ -25,7 +27,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 }">
 <div class="logo">
 <div class="container">
-			<a href="index.html"><img src="images/logo.png" alt="" style="margin-top:6%;" /></a>
+			<a href="index.jsp"><img src="images/logo.png" alt="" style="margin-top:6%;" /></a>
 		</div>
 	</div>
 		 <div class="headertop_desc" style="background:none;border-bottom:none;">
@@ -33,15 +35,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="nav_list">
 
 <div class="container">
-	<form class="form_login" method="post" action="painel.html">
-		<label>Nome</label>
-		<input type="text" required>
-		<label>Endereço</label>
-		<input type="text" required>
-		<label>CPF</label>
-		<input type="text" required>
-		<label>Telefone</label>
-		<input type="text" required>
+	<form class="form_login" method="post" action="painel.jsp">
 		<label>Login</label>
 		<input type="text" required>
 		<label>Senha</label>

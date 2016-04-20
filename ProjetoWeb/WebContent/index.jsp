@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <title>Cinema XXII</title>
+
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -22,30 +24,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 	<!-- header-section-starts -->
 	<div class="full">
-			<div class="menu">
-				<ul>
-					<li><a class="active" href="index.html"><i class="home"></i></a></li>
-					<li><a href="videos.html"><div class="video"><i class="videos"></i><i class="videos1"></i></div></a></li>
-					<li><a href="reviews.html"><div class="cat"><i class="watching"></i><i class="watching1"></i></div></a></li>
-					<li><a href="404.html"><div class="bk"><i class="booking"></i><i class="booking1"></i></div></a></li>
-					<li><a href="contact.html"><div class="cnt"><i class="contact"></i><i class="contact1"></i></div></a></li>
-				</ul>
-			</div>
+		<%@ include file="menu.jsp" %>
 		<div class="main">
 		<div class="header">
-			<div class="top-header">
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt="" /></a>
-				</div>
-				<div class="search">
-					<form>
-						<input type="text" value="" Placeholder="Pesquisar..." />
-						<input type="submit" value="">
-					</form>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="header-info">
+		<%@ include file="topo.jsp" %>
+					<div class="header-info">
 				<h1>BIG HERO 6</h1>
 				<p class="age"><a href="#">Livre</a> Don Hall, Chris Williams</p>
 				<p class="review">Nota	:   8,5/10</p>
