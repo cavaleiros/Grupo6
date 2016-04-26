@@ -35,13 +35,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="nav_list">
 
 <div class="container">
-	<form class="form_login" method="post" action="painel.jsp">
+	<form class="form_login" method="post" action="verificando.jsp">
 		<label>Login</label>
 		<input type="text" required>
 		<label>Senha</label>
 		<input type="password" required>
 		<div class="clearfix"></div>
-		<input type="submit" value="Entrar">
+		<input type="submit" value="Login"  name="acao">
 	</form>
 </div>
 </div>

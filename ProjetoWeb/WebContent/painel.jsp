@@ -40,8 +40,8 @@
 	  	</div>
 	  	<script>
 	  		$('#sair').click(function(){
-	  			alert("Obrigado por ter usado nosso sistema! :)");
-	  			window.location = 'index.html';
+	  			alert("Obrigado por utiliza nosso sistema!"); 
+	  			window.location = 'index.jsp';
 	  		});
 	  	</script>
   	  		<div class="wrap">
