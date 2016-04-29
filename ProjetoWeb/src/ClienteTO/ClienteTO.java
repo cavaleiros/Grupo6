@@ -1,67 +1,43 @@
 package ClienteTO;
 
 public class ClienteTO {
-	private int id;
-	public int getId() {
-		return id;
-	}
-
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-
+	private String nome,email,login,senha;
+	private int cpf,telefone;
+	
 	public String getNome() {
 		return nome;
 	}
-
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-
-	public String getFone() {
-		return fone;
+	public String getEmail() {
+		return email;
 	}
-
-
-	public void setFone(String fone) {
-		this.fone = fone;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-
-
-
-
-	private String nome;
-	private String fone;
-
-	
-	
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		ClienteTO other = (ClienteTO) obj;
-		if (fone == null) {
-			if (other.fone != null)
-				return false;
-		} else if (!fone.equals(other.fone))
-			return false;
-		if (id != other.id)
-			return false;
-		if (nome == null) {
-			if (other.nome != null)
-				return false;
-		} else if (!nome.equals(other.nome))
-
-				return false;
-			return true;
-			
-		}
+	public String getLogin() {
+		return login;
 	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	public int getCpf() {
+		return cpf;
+	}
+	public void setCpf(int cpf) {
+		this.cpf = cpf;
+	}
+	public int getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(int telefone) {
+		this.telefone = telefone;
+	}
+}

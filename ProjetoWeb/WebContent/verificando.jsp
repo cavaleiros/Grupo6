@@ -11,13 +11,11 @@
 <body>
 <%ClienteTO to = (ClienteTO)request.getAttribute("cliente"); %>
 <script>
-	if(verificacao != null){
+	
 		alert("Login ou Senha incorreto"); 
-		  window.location = 'login.jsp';
-	}else{
-		  alert("Bem-Vindo " + getLogin()); 
+	
 		  window.location = 'painel.jsp';
-	}
+
 </script>
 	
 	

@@ -1,115 +1,99 @@
 package Cliente;
-
 import ClienteTO.ClienteTO;
-
-import java.sql.SQLException;
-
 import ClienteDAO.ClienteDAO;
-
 public class Cliente {
-	private int id;
+	private String nome,email,login,senha;
+	private int cpf,telefone;
+	
+	public Cliente(String nome,String email,int cpf,String login,String senha,int telefone) {
+		this.nome = nome;
+		this.email = email;
+		this.cpf = cpf;
+		this.login = login;
+		this.senha = senha;
+		this.telefone= telefone;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public String getFone() {
-		return fone;
+	public String getEmail() {
+		return email;
 	}
-
-	public void setFone(String fone) {
-		this.fone = fone;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-
-
-	public void setId(int id) {
-		this.id = id;
+	public String getLogin() {
+		return login;
 	}
-
-	private String nome;
-	private String fone;
-
-	public Cliente(int id, String nome, String fone) {
-		this.id = id;
-		this.nome = nome;
-		this.fone = fone;
+	public void setLogin(String login) {
+		this.login = login;
 	}
-
-	public int getId() {
-		return id;
+	public String getSenha() {
+		return senha;
 	}
-
-
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	public int getCpf() {
+		return cpf;
+	}
+	public void setCpf(int cpf) {
+		this.cpf = cpf;
+	}
+	public int getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(int telefone) {
+		this.telefone = telefone;
+	}
 	public void criar() {
 		ClienteDAO dao = new ClienteDAO();
 		ClienteTO to = new ClienteTO();
-		to.setId(id);
 		to.setNome(nome);
-		to.setFone(fone);
+		to.setEmail(email);
+		to.setCpf(cpf);		
+		to.setTelefone(telefone);
+		to.setLogin(login);
+		to.setSenha(senha);
 		dao.incluir(to);
 	}
-
-	public void atualizar() {
-		ClienteDAO dao = new ClienteDAO();
-		ClienteTO to = new ClienteTO();
-		to.setId(id);
-		to.setNome(nome);
-		to.setFone(fone);
-		dao.atualizar(to);
-	}
-
 	public void excluir() {
 		ClienteDAO dao = new ClienteDAO();
 		ClienteTO to = new ClienteTO();
-		to.setId(id);
+		to.setNome(nome);
 		dao.excluir(to);
 	}
 
-	public void carregar() throws SQLException {
+	public void verificacao() {
 		ClienteDAO dao = new ClienteDAO();
-		ClienteTO to = dao.carregar(id);
-		nome = to.getNome();
-		fone = to.getFone();
-}
+		ClienteTO to = new ClienteTO();
+		to.setLogin(login);
+		to.setSenha(senha);
+	}
 	
 	public void alterar() {
 		ClienteDAO dao = new ClienteDAO();
-		ClienteTO to = dao.alterar(id);
-		nome = to.getNome();
-		fone = to.getFone();
+		ClienteTO to = new ClienteTO();
+		to.setNome(nome);
+		to.setEmail(email);
+		to.setCpf(cpf);
+		to.setTelefone(telefone);
+		to.setLogin(login);
+		to.setSenha(senha);
 }
 	
 	@Override
 	public String toString() {
-		return "Cliente [id=" + id + ", nome=" + nome + ", fone="
-	+ fone + "]";
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Cliente other = (Cliente) obj;
-		if (fone == null) {
-			if (other.fone != null)
-				return false;
-		} else if (!fone.equals(other.fone))
-			return false;
-		if (id != other.id)
-			return false;
-		if (nome == null) {
-			if (other.nome != null)
-				return false;
-		} else if (!nome.equals(other.nome))
-			return false;
-		return true;
-		
+		return "Cliente:"
+				+ "\nnome: " + nome 
+				+ ", email: " + email 
+				+ ", cpf: " + cpf 
+				+ ", telefone: " + telefone 
+				+ ", Login:" + login 
+				+ ", senha: " + senha;
 	}
 }
