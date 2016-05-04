@@ -46,7 +46,7 @@ public class ClienteDAO {
 	}
 	
 	public void verificacao(ClienteTO to) {
-		String sqlVerificacao = "select * from cliente where login=? and senha=?";
+		String sqlVerificacao = "select * from cliente where login_cliente=? and senha_cliente=?";
 		// usando o try with resources do Java 7, que fecha o que abriu
 		try (Connection conn = ConnectionFactory.obtemConexao();
 				PreparedStatement stm = conn.prepareStatement(sqlVerificacao);) {
@@ -61,7 +61,7 @@ public class ClienteDAO {
 					
 	public ClienteTO alterar(int id) {
 				ClienteTO to = new ClienteTO();
-					String sqlSelect = "SELECT nome, fone FROM cliente WHERE nome_cliente,email_cliente,cpf_cliente,telefone_cliente,login_cliente,senha_cliente = ?,?,?,?,?,?";
+					String sqlSelect = "SELECT nome_cliente, telefone_cliente FROM cliente WHERE nome_cliente,email_cliente,cpf_cliente,telefone_cliente,login_cliente,senha_cliente = ?,?,?,?,?,?";
 					// usando o try with resources do Java 7, que fecha o que abriu
 					try (Connection conn = ConnectionFactory.obtemConexao();
 							PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
@@ -82,5 +82,34 @@ public class ClienteDAO {
 			System.out.print(e1.getStackTrace());
 		}
 		return to;
+	}
+
+
+	public ArrayList<ClienteTO> listarClientes(String chave) {
+		ClienteTO to;
+		ArrayList<ClienteTO> lista = new ArrayList<>();
+		String sqlSelect = "SELECT nome_cliente, telefone_cliente FROM cliente WHERE nome_cliente,email_cliente,cpf_cliente,telefone_cliente,login_cliente,senha_cliente FROM cliente where upper(nome_cliente) like ?";
+		// usando o try with resources do Java 7, que fecha o que abriu
+		try (Connection conn = ConnectionFactory.obtemConexao();
+				PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
+				stm.setString(1, "%" + chave.toUpperCase() + "%");
+			try (ResultSet rs = stm.executeQuery();) {
+				while(rs.next()) {
+					to = new ClienteTO();
+					to.setNome(rs.getString("nome"));
+					to.setEmail(rs.getString("email"));
+					to.setCpf(rs.getInt("cpf"));
+					to.setTelefone(rs.getInt("telefone"));
+					to.setLogin(rs.getString("login"));
+					to.setSenha(rs.getString("senha"));
+					lista.add(to);
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} catch (SQLException e1) {
+			System.out.print(e1.getStackTrace());
+		}
+		return lista;
 	}
 }
