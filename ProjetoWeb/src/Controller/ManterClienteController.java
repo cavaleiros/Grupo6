@@ -59,7 +59,7 @@ public class ManterClienteController extends HttpServlet {
 		id = Integer.parseInt(pid);
 		} catch (NumberFormatException e){
 		
-		Cliente cliente = new Cliente(pnome,pemail,pcpf2,ptelefone,plogin,psenha2);
+		Cliente cliente = new Cliente(pnome,pemail,pcpf,ptelefone,plogin,psenha);
 		if (pAcao.equals("Cadastrar")) {
 		sqlInsert = "INSERT into cliente values(?,?,?,?,?,?)";
 		cliente.criar();

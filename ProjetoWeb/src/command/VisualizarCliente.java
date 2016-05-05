@@ -1,4 +1,4 @@
-package Command;
+package command;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,13 +7,13 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import Cliente.Cliente;
 import ClienteTO.ClienteTO;
 
-public class ExcluirCliente implements Command {
+public class VisualizarCliente implements Command {
 
+	
 	public void executa(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String pId = request.getParameter("id");
@@ -33,17 +33,12 @@ public class ExcluirCliente implements Command {
 
 		}
 
-		Cliente cliente = new Cliente(pnome, pemail,pcpf2, ptelefone,plogin,psenha2);
+		Cliente cliente = new Cliente(pnome, pemail,pcpf, ptelefone,plogin,psenha);
 		RequestDispatcher view = null;
-		HttpSession session = request.getSession();
 
-		cliente.excluir();
-		@SuppressWarnings("unchecked")
-		ArrayList<ClienteTO> lista = (ArrayList<ClienteTO>) session
-				.getAttribute("lista");
-		lista.remove(busca(cliente, lista));
-		session.setAttribute("lista", lista);
-		view = request.getRequestDispatcher("ListarClientes.jsp");
+		cliente.verificacao();
+		request.setAttribute("cliente", cliente.getTO());
+		view = request.getRequestDispatcher("VisualizarCliente.jsp");
 		view.forward(request, response);
 	}
 
@@ -51,7 +46,7 @@ public class ExcluirCliente implements Command {
 		ClienteTO to;
 		for (int i = 0; i < lista.size(); i++) {
 			to = lista.get(i);
-			if (to.getId() == cliente.getId()) {
+			if (to.getNome() == cliente.getNome()) {
 				return i;
 			}
 		}

@@ -2,16 +2,23 @@ package Cliente;
 import ClienteTO.ClienteTO;
 import ClienteDAO.ClienteDAO;
 public class Cliente {
+	private int id;
 	private String nome,email,login,senha;
-	private int cpf,telefone;
+	private String cpf,telefone;
 	
-	public Cliente(String nome,String email,int cpf,String login,String senha,int telefone) {
+	public Cliente(String nome,String email,String cpf,String login,String senha,String telefone) {
 		this.nome = nome;
 		this.email = email;
 		this.cpf = cpf;
 		this.login = login;
 		this.senha = senha;
 		this.telefone= telefone;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	public String getNome() {
@@ -38,20 +45,25 @@ public class Cliente {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
-	public void setTelefone(int telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 	public void criar() {
 		ClienteDAO dao = new ClienteDAO();
+		ClienteTO to = getTO();
+		dao.incluir(to);
+		this.id = to.getId();
+	}
+	public ClienteTO getTO() {
 		ClienteTO to = new ClienteTO();
 		to.setNome(nome);
 		to.setEmail(email);
@@ -59,7 +71,7 @@ public class Cliente {
 		to.setTelefone(telefone);
 		to.setLogin(login);
 		to.setSenha(senha);
-		dao.incluir(to);
+		return to;
 	}
 	public void excluir() {
 		ClienteDAO dao = new ClienteDAO();

@@ -15,8 +15,8 @@ public class ClienteDAO {
 				PreparedStatement stm = conn.prepareStatement(sqlInsert);) {
 			stm.setString(1, to.getNome());
 			stm.setString(2, to.getEmail());
-			stm.setInt(3, to.getTelefone());
-			stm.setInt(4, to.getCpf());
+			stm.setString(3, to.getTelefone());
+			stm.setString(4, to.getCpf());
 			stm.setString(5, to.getLogin());
 			stm.setString(6, to.getSenha());
 			stm.execute();
@@ -70,8 +70,8 @@ public class ClienteDAO {
 							if (rs.next()) {
 								to.setNome(rs.getString("nome"));
 								to.setEmail(rs.getString("email"));
-								to.setCpf(rs.getInt("cpf"));
-								to.setTelefone(rs.getInt("telefone"));
+								to.setCpf(rs.getString("cpf"));
+								to.setTelefone(rs.getString("telefone"));
 								to.setLogin(rs.getString("login"));
 								to.setSenha(rs.getString("senha"));
 							}				
@@ -98,8 +98,8 @@ public class ClienteDAO {
 					to = new ClienteTO();
 					to.setNome(rs.getString("nome"));
 					to.setEmail(rs.getString("email"));
-					to.setCpf(rs.getInt("cpf"));
-					to.setTelefone(rs.getInt("telefone"));
+					to.setCpf(rs.getString("cpf"));
+					to.setTelefone(rs.getString("telefone"));
 					to.setLogin(rs.getString("login"));
 					to.setSenha(rs.getString("senha"));
 					lista.add(to);

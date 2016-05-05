@@ -1,15 +1,18 @@
-package Command;
+package command;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import Cliente.Cliente;
+import ClienteTO.ClienteTO;
 
-public class EditarCliente implements Command {
+public class ExcluirCliente implements Command {
 
 	public void executa(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -21,8 +24,7 @@ public class EditarCliente implements Command {
 		String ptelefone= request.getParameter("telefone");
 		String plogin = request.getParameter("login");
 		String psenha = request.getParameter("senha");
-		int pcpf2 = Integer.parseInt(pcpf);
-		int psenha2 = Integer.parseInt(psenha);
+	
 		int id = -1;
 		try {
 			id = Integer.parseInt(pId);
@@ -30,14 +32,29 @@ public class EditarCliente implements Command {
 
 		}
 
-		Cliente cliente = new Cliente(pnome, pemail,pcpf2, ptelefone,plogin,psenha2);
+		Cliente cliente = new Cliente(pnome, pemail,pcpf, ptelefone,plogin,psenha);
 		RequestDispatcher view = null;
+		HttpSession session = request.getSession();
 
-		cliente.verificacao();
-		request.setAttribute("cliente", cliente.getClienteTO());
-		view = request.getRequestDispatcher("AlterarCliente.jsp");
-
+		cliente.excluir();
+		@SuppressWarnings("unchecked")
+		ArrayList<ClienteTO> lista = (ArrayList<ClienteTO>) session
+				.getAttribute("lista");
+		lista.remove(busca(cliente, lista));
+		session.setAttribute("lista", lista);
+		view = request.getRequestDispatcher("ListarClientes.jsp");
 		view.forward(request, response);
-
 	}
+
+	public int busca(Cliente cliente, ArrayList<ClienteTO> lista) {
+		ClienteTO to;
+		for (int i = 0; i < lista.size(); i++) {
+			to = lista.get(i);
+			if (to.getId() == cliente.getId()) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
 }

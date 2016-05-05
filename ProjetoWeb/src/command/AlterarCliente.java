@@ -1,4 +1,4 @@
-package Command;
+package command;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,13 +7,15 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import Cliente.Cliente;
 import ClienteTO.ClienteTO;
+import command.Command;
 
-public class VisualizarCliente implements Command {
+public class AlterarCliente implements Command {
 
-	
+	@Override
 	public void executa(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String pId = request.getParameter("id");
@@ -24,8 +26,6 @@ public class VisualizarCliente implements Command {
 		String ptelefone= request.getParameter("telefone");
 		String plogin = request.getParameter("login");
 		String psenha = request.getParameter("senha");
-		int pcpf2 = Integer.parseInt(pcpf);
-		int psenha2 = Integer.parseInt(psenha);
 		int id = -1;
 		try {
 			id = Integer.parseInt(pId);
@@ -33,11 +33,19 @@ public class VisualizarCliente implements Command {
 
 		}
 
-		Cliente cliente = new Cliente(pnome, pemail,pcpf2, ptelefone,plogin,psenha2);
+		Cliente cliente = new Cliente(pnome, pemail,pcpf, ptelefone,plogin,psenha);
 		RequestDispatcher view = null;
+		HttpSession session = request.getSession();
 
-		cliente.verificacao();
-		request.setAttribute("cliente", cliente.getClienteTO());
+		cliente.alterar();
+		@SuppressWarnings("unchecked")
+		ArrayList<ClienteTO> lista = (ArrayList<ClienteTO>) session
+				.getAttribute("lista");
+		int pos = busca(cliente, lista);
+		lista.remove(pos);
+		lista.add(pos, cliente.getTO());
+		session.setAttribute("lista", lista);
+		request.setAttribute("cliente", cliente.getTO());
 		view = request.getRequestDispatcher("VisualizarCliente.jsp");
 		view.forward(request, response);
 	}
