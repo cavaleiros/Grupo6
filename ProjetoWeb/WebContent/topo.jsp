@@ -4,6 +4,7 @@
 				</div>
 				<div style="float: left;margin-top: 1%;margin-left: 30%;">
 					<ul class="logar">
+						
 						<li><a href="login.jsp">Entrar | </a></li>
 						<li><a href="cadastro.jsp">Cadastrar</a></li>
 					</ul>

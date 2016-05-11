@@ -57,7 +57,31 @@ public class ClienteDAO {
 			e.printStackTrace();
 		}
 	}
-
+	public ClienteTO carregar(int id) {
+		ClienteTO to = new ClienteTO();
+		to.setId(id);
+		String sqlSelect = "SELECT nome, telefone, email FROM cliente WHERE	cliente.id = ?";
+		// usando o try with resources do Java 7, que fecha o que abriu
+		try (Connection conn = ConnectionFactory.obtemConexao();
+		PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
+		stm.setInt(1, id);
+		try (ResultSet rs = stm.executeQuery();) {
+		if (rs.next()) {
+			to.setNome(rs.getString("nome"));
+			to.setEmail(rs.getString("email"));
+			to.setCpf(rs.getString("cpf"));
+			to.setTelefone(rs.getString("telefone"));
+			to.setLogin(rs.getString("login"));
+			to.setSenha(rs.getString("senha"));
+		}
+		} catch (SQLException e) {
+		e.printStackTrace();
+		}
+		} catch (SQLException e1) {
+		System.out .print(e1.getStackTrace());
+		}
+		return to;
+		}
 					
 	public ClienteTO alterar(int id) {
 				ClienteTO to = new ClienteTO();
@@ -112,4 +136,29 @@ public class ClienteDAO {
 		}
 		return lista;
 	}
+
+public ArrayList<ClienteTO> listarClientes() {
+ClienteTO to;
+ArrayList<ClienteTO> lista = new ArrayList<>();
+String sqlSelect = "SELECT id, nome, fone, email FROM cliente";
+// usando o try with resources do Java 7, que fecha o que abriu
+try (Connection conn = ConnectionFactory.obtemConexao();
+PreparedStatement stm = conn.prepareStatement(sqlSelect);) {
+try (ResultSet rs = stm.executeQuery();) {
+while(rs.next()) {
+to = new ClienteTO();
+to.setId(rs.getInt("id"));
+to.setNome(rs.getString("nome"));
+to.setTelefone(rs.getString("telefone"));
+to.setEmail(rs.getString("email"));
+lista.add(to);
+}
+} catch (SQLException e) {
+e.printStackTrace();
+}
+} catch (SQLException e1) {
+System.out .print(e1.getStackTrace());
+}
+return lista;
+}
 }

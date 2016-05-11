@@ -9,7 +9,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Visualizar Cliente</title>
 
-            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="css/bootstrap.css" rel="stylesheet">
             <link href="css/style.css" rel="stylesheet">
         </head>
 
@@ -38,9 +38,9 @@
                 </div>
                 <!-- /.modal -->
                 <!-- Barra superior com os menus de navegação -->
-				<c:import url="Menu.jsp"/>
+				<c:import url="menu2.jsp"/>
                 <!-- Container Principal -->
-                <div id="main" class="container">
+                <div id="main" class="container" style="margin-top:10%;">
                     <h3 class="page-header">Visualizar Cliente #${cliente.id }</h3>
                     <div class="row">
                         <div class="col-md-12">

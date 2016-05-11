@@ -10,7 +10,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Buscar Clientes</title>
 
-            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="css/bootstrap.css" rel="stylesheet">
             <link href="css/style.css" rel="stylesheet">
 
         </head>
@@ -40,13 +40,13 @@
             </div>
             <!-- /.modal -->
             <!-- Barra superior com os menus de navegação -->
-			<c:import url="Menu.jsp"/>
+			<c:import url="menu2.jsp"/>
             <!-- Container Principal -->
-            <div id="main" class="container-fluid">
+            <div id="main" class="container-fluid" style="margin-top:5%;">
                 <form action="controller.do" method="post">
                     <div id="top" class="row">
                         <div class="col-md-3">
-                            <h2>Clientes</h2>
+                            <img src="images/logo.png">
                         </div>
 
                         <div class="col-md-6">
@@ -71,41 +71,7 @@
                 <div id="list" class="row">
 
                     <div class="table-responsive col-md-12">
-                        <table class="table table-striped" cellspacing="0" cellpadding="0">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nome</th>
-                                    <th>Celular</th>
-                                    <th>E-Mail</th>
-                                    <th class="actions">Ações</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-          					<c:forEach var="cliente" items="${lista }">
-                                       <tr>
-                                            <td>
-                                               ${cliente.id }
-                                            </td>
-                                            <td>
-                                                ${cliente.nome }
-                                            </td>
-                                            <td>
-                                                ${cliente.fone }
-                                            </td>
-                                            <td>
-                                                ${cliente.email }
-                                            </td>
-                                            <td class="actions">
-                                                <a class="btn btn-success btn-xs" href="controller.do?command=VisualizarCliente&id=${cliente.id }">Visualizar</a>
-                                                <a class="btn btn-warning btn-xs" href="controller.do?command=EditarCliente&id=${cliente.id }">Editar</a>
-                                                <button id="btn${cliente.id }%>" type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-modal" data-cliente="${cliente.id }">Excluir</button>
-                                            </td>
-                                        </tr>             
-                            </c:forEach>
-
-                            </tbody>
-                        </table>
+                  
 
                     </div>
                 </div>

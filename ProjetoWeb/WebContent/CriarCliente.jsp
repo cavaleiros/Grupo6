@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>cerveja.biz - Criar Cliente</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -58,7 +58,7 @@
             <div id="actions" class="row">
                 <div class="col-md-12">
                     <button type="submit" class="btn btn-primary" name="command" value="CriarCliente">Salvar</button>
-                    <a href="index.jsp" class="btn btn-default">Cancelar</a>
+                    <a href="painel-admin.jsp" class="btn btn-default">Cancelar</a>
                 </div>
             </div>
         </form>

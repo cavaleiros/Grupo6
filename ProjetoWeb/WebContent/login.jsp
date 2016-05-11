@@ -35,14 +35,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="nav_list">
 
 <div class="container">
-	<form class="form_login" method="post" action="verificando.jsp">
+	<form class="form_login" method="post" >
 		<label>Login</label>
-		<input type="text" required>
-		<label>Senha</label>
-		<input type="password" required>
+	<input type="text" name="login" id="login" >
+		<label>Senha</label>	
 		<div class="clearfix"></div>
-		<input type="submit" value="Login"  name="acao">
+		<input type="password" name="senha" id="senha" >
+		<a  href="#" id="teste" clas="deucerto" style="float:right;
+	padding:0.6em 1em;
+	margin-top:4%;
+	background:transparent;
+	border:1px solid #777;
+	border-radius:12px;
+	border:1px solid #fff;
+	color:#fff;">Logar</a>
+		
 	</form>
+	<script type="text/javascript">
+	
+	$('#teste').click(function(){
+		if($("#login").val() == "admin" && $("#senha").val() == "123" ){
+			alert("Bem Vindo Administrador"); 
+			window.location = "painel-admin.jsp";
+		}else{
+			alert("Bem Vindo Usuário"); 
+			window.location = "painel.jsp";
+		}
+		});
+	
+	</script>
 </div>
 </div>
 </div>

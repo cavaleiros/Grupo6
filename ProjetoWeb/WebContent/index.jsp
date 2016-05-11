@@ -105,10 +105,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="more-reviews">
 			 <ul id="flexiselDemo2">
-			<li><img src="images/m1.jpg" alt=""/></li>
-			<li><img src="images/m2.jpg" alt=""/></li>
-			<li><img src="images/m3.jpg" alt=""/></li>
-			<li><img src="images/m4.jpg" alt=""/></li>
+			<li ><img src="images/9.jpg" alt="" style="width:230px;height:300px;"/></li>
+			<li ><img src="images/11.jpg" alt="" style="width:230px;height:300px;"/></li>
+			<li ><img src="images/5.jpg" alt="" style="width:230px;height:300px;"/ ></li>
+			<li ><img src="images/16.png" alt="" style="width:230px;height:300px;"/></li>
 		</ul>
 			<script type="text/javascript">
 		$(window).load(function() {

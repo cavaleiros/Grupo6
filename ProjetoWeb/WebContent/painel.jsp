@@ -41,7 +41,7 @@
 	  	<script>
 	  		$('#sair').click(function(){
 	  			alert("Obrigado por utiliza nosso sistema!"); 
-	  			window.location = 'home.jsp';
+	  			window.location = 'index.jsp';
 	  		});
 	  	</script>
   	  		<div class="wrap">
