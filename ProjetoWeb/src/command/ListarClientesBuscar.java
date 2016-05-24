@@ -9,22 +9,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import model.Vendedor;
-import to.ClienteTO;
+import model.Cliente;
+import model.VendedorService;
 
 public class ListarClientesBuscar implements Command {
 
+	@Override
 	public void executa(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String chave = request.getParameter("data[search]");
-		Vendedor vendedor = new Vendedor();
-		ArrayList<ClienteTO> lista = null;
+		VendedorService vendedorService = new VendedorService();
+		ArrayList<Cliente> lista = null;
 		HttpSession session = request.getSession();
 
 		if (chave != null && chave.length() > 0) {
-			lista = vendedor.listarClientes(chave);
+			lista = vendedorService.listarClientes(chave);
 		} else {
-			lista = vendedor.listarClientes();
+			lista = vendedorService.listarClientes();
 		}
 		session.setAttribute("lista", lista);
 

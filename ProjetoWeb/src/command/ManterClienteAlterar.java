@@ -11,9 +11,10 @@ import javax.servlet.http.HttpSession;
 
 import command.Command;
 import model.Cliente;
+import model.ClienteService;
 import to.ClienteTO;
 
-public class AlterarCliente implements Command {
+public class ManterClienteAlterar implements Command {
 
 	@Override
 	public void executa(HttpServletRequest request, HttpServletResponse response)
@@ -33,28 +34,28 @@ public class AlterarCliente implements Command {
 
 		}
 
-		Cliente cliente = new Cliente(pnome, pemail,pcpf, ptelefone,plogin,psenha);
+		ClienteService ClienteService = new ClienteService(psenha, psenha, psenha, psenha, psenha, psenha);
 		RequestDispatcher view = null;
 		HttpSession session = request.getSession();
 
-		cliente.alterar();
+		ClienteService.atualizar();
 		@SuppressWarnings("unchecked")
-		ArrayList<ClienteTO> lista = (ArrayList<ClienteTO>) session
+		ArrayList<Cliente> lista = (ArrayList<Cliente>) session
 				.getAttribute("lista");
-		int pos = busca(cliente, lista);
+		int pos = busca(ClienteService, lista);
 		lista.remove(pos);
-		lista.add(pos, cliente.getTO());
+		lista.add(pos, ClienteService.getData());
 		session.setAttribute("lista", lista);
-		request.setAttribute("cliente", cliente.getTO());
+		request.setAttribute("cliente", ClienteService.getData());
 		view = request.getRequestDispatcher("VisualizarCliente.jsp");
 		view.forward(request, response);
 	}
 
-	public int busca(Cliente cliente, ArrayList<ClienteTO> lista) {
-		ClienteTO to;
+	public int busca(ClienteService clienteService, ArrayList<Cliente> lista) {
+		Cliente to;
 		for (int i = 0; i < lista.size(); i++) {
 			to = lista.get(i);
-			if (to.getNome() == cliente.getNome()) {
+			if (to.getNome() == clienteService.getNome()) {
 				return i;
 			}
 		}

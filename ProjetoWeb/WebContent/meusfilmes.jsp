@@ -93,45 +93,35 @@
 			 <div class="clear"></div>
   		</div>     
 				<div class="header_bottom">
-					<div class="header_bottom_left">				
-						<div class="categories">
+					<div class="header_bottom_left" style="width:100%;">				
+						<div class="categories1">
 						   <ul>
 						  	   <h3>Categorias</h3>
-							      <li><a href="meusfilmes.jsp">Todas</a></li>
-							      <li><a href="meusfilmes.jsp">Comédia</a></li>
-							      <li><a href="meusfilmes.jsp">Ação</a></li>
-							      <li><a href="meusfilmes.jsp">Aventura</a></li>
-							      <li><a href="meusfilmes.jsp">Animação</a></li>
-							      <li><a href="meusfilmes.jsp">Séries</a></li>
-                                  <li><a href="meusfilmes.jsp">Terror</a></li>
-                                  <li><a href="meusfilmes.jsp">Romance</a></li>
-                                  <li><a href="meusfilmes.jsp">Drama</a></li>
-                                  <li><a href="meusfilmes.jsp">Suspense</a></li>
-                                  <li><a href="meusfilmes.jsp">Nacionais</a></li>
+							      <li><a href="#">Todas</a></li>
+							      <li><a href="#">Comédia</a></li>
+							      <li><a href="#">Ação</a></li>
+							      <li><a href="#">Aventura</a></li>
+							      <li><a href="#">Animação</a></li>
+							      <li><a href="#">Séries</a></li>
+                                  <li><a href="#">Terror</a></li>
+                                  <li><a href="#">Romance</a></li>
+                                  <li><a href="#">Drama</a></li>
+                                  <li><a href="#">Suspense</a></li>
+                                  <li><a href="#">Nacionais</a></li>
 <!--
-							       <li><a href="meusfilmes.jsp">Kannada</a></li>
-							       <li><a href="meusfilmes.jsp">Bengali</a></li>
-							       <li><a href="meusfilmes.jsp">Assami</a></li>
-							       <li><a href="meusfilmes.jsp">Kids</a></li>
-							       <li><a href="meusfilmes.jsp">Animation</a></li>
-							       <li><a href="meusfilmes.jsp">Games</a></li>
+							       <li><a href="#">Kannada</a></li>
+							       <li><a href="#">Bengali</a></li>
+							       <li><a href="#">Assami</a></li>
+							       <li><a href="#">Kids</a></li>
+							       <li><a href="#">Animation</a></li>
+							       <li><a href="#">Games</a></li>
 -->
 						  	 </ul>
 						</div>					
 		  	         </div>
 						    <div class="header_bottom_right">					 
 						 	    <!------ Slider ------------>
-								  <div class="slider">
-							      	<div class="slider-wrapper theme-default">
-							            <div id="slider" class="nivoSlider">
-							                <img src="images-painel/1.jpg" data-thumb="images-painel/1.jpg" alt="" />
-							                <img src="images-painel/2.jpg" data-thumb="images-painel/2.jpg" alt="" />
-							                <img src="images-painel/3.jpg" data-thumb="images-painel/3.jpg" alt="" />
-							                <img src="images-painel/4.jpg" data-thumb="images-painel/4.jpg" alt="" />
-							                 <img src="images-painel/5.jpg" data-thumb="images-painel/5.jpg" alt="" />
-							            </div>
-							        </div>
-						   		</div>
+								 
 						<!------End Slider ------------>
 			         </div>
 			     <div class="clear"></div>
@@ -144,7 +134,7 @@
       <div class="content">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>Novos Filmes</h3>
+    		<h3>Meus Filmes</h3>
     		</div>
     	</div>
 	      <div class="section group">
@@ -153,10 +143,10 @@
 					 <h2><a href="preview.html">End Game</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$620.87</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>					 
@@ -166,10 +156,10 @@
 					 <h2><a href="preview.html">Sorority Wars</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$620.87</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -180,10 +170,10 @@
 					 <h2><a href="preview.html">Twilight New Moon</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$899.75</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -194,10 +184,10 @@
 					 <h2><a href="preview.html">Avatar</a></h2>
 					 <div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$599.00</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -207,10 +197,10 @@
 					 <h2><a href="preview.html">Black Swan</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$679.87</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>				     
@@ -218,7 +208,7 @@
 			</div>
 			<div class="content_bottom">
     		<div class="heading">
-    		<h3>Novas Séries </h3>
+    		<h3>Minhas Séries </h3>
     		</div>
     	  </div>
 			<div class="section group">
@@ -227,10 +217,10 @@
 					 <h2><a href="preview.html">Beauty and the beast</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$620.87</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -241,10 +231,10 @@
 					 <h2><a href="preview.html">Eclipse</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$620.87</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -255,10 +245,10 @@
 					 <h2><a href="preview.html">Coraline</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$899.75</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -269,10 +259,10 @@
 					 <h2><a href="preview.html">Unstoppable</a></h2>
 					 <div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$599.00</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -282,10 +272,10 @@
 					 <h2><a href="preview.html">Priest 3D</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
-							<p><span class="rupees">$679.87</span></p>
+							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="#">Assista Agora!</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					 </div>				     

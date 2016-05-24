@@ -101,9 +101,11 @@ public class ClienteService {
 		ClienteDAO dao = new ClienteDAO();
 		Cliente to = dao.carregar(data.getId());
 		data.setNome(to.getNome());
-		data.setFone(to.getFone());
 		data.setEmail(to.getEmail());
-	}
+		data.setCpf(to.getCpf());
+		data.setLogin(to.getLogin());
+		data.setSenha(to.getSenha());
+		data.setTelefone(to.getTelefone());}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -114,15 +116,35 @@ public class ClienteService {
 		if (getClass() != obj.getClass())
 			return false;
 		ClienteService other = (ClienteService) obj;
+		if (data.getNome() == null) {
+			if (other.data.getNome() != null)
+				return false;
+		} else if (!data.getNome().equals(other.data.getNome()))
+			return false;
 		if (data.getEmail() == null) {
 			if (other.data.getEmail() != null)
 				return false;
 		} else if (!data.getEmail().equals(other.data.getEmail()))
 			return false;
-		if (data.getFone() == null) {
-			if (other.data.getFone() != null)
+		if (data.getCpf() == null) {
+			if (other.data.getCpf() != null)
 				return false;
-		} else if (!data.getFone().equals(other.data.getFone()))
+		} else if (!data.getCpf().equals(other.data.getCpf()))
+			return false;
+		if (data.getLogin() == null) {
+			if (other.data.getLogin() != null)
+				return false;
+		} else if (!data.getLogin().equals(other.data.getLogin()))
+			return false;
+		if (data.getSenha() == null) {
+			if (other.data.getSenha() != null)
+				return false;
+		} else if (!data.getSenha().equals(other.data.getSenha()))
+			return false;
+		if (data.getTelefone() == null) {
+			if (other.data.getTelefone() != null)
+				return false;
+		} else if (!data.getTelefone().equals(other.data.getTelefone()))
 			return false;
 		if (data.getId() != other.data.getId())
 			return false;

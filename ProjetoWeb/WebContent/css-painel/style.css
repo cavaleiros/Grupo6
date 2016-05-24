@@ -235,6 +235,9 @@ body {
 .categories{
 	border:1px solid #EEE;
 }
+.categories1{
+	border:1px solid #EEE;
+}
 .categories h3{
 	font-size:1.2em;
 	color:#FFF;
@@ -263,6 +266,43 @@ body {
 .categories li a:hover{
 	color:#FC7D01;
 }
+
+
+
+
+.categories1 h3{
+	font-size:1.2em;
+	color:#FFF;
+	padding:10px;
+	background:#FC7D01;
+	text-transform:uppercase;
+	font-family: 'ambleregular';	
+}
+.categories1 li {
+    text-align: center;
+    width: 9.09%;
+    float: left;
+    display: inline-block;
+    background: url(../images/strip-bg.gif) repeat-x #F6F6F6;
+}
+.categories1 li a {
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 9px 5px;
+    color: #9C9C9C;
+    font-family: 'ambleregular';
+    /* margin: 0 20px; */
+    background: url(../images/drop_arrow.png) no-repeat 0;
+    border-bottom: 1px solid #F1F1F1;
+    text-transform: uppercase;
+}
+.categories1 li:last-child a{
+	border:none;
+}
+.categories1 li a:hover{
+	color:#FC7D01;
+}
+
 .header_bottom_right{
 	float:left;
 	width:74%;

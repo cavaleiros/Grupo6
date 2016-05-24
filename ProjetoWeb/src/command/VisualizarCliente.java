@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.Cliente;
+import model.ClienteService;
 import to.ClienteTO;
 
 public class VisualizarCliente implements Command {
@@ -33,13 +34,9 @@ public class VisualizarCliente implements Command {
 
 		}
 
-		Cliente cliente = new Cliente(pnome, pemail,pcpf, ptelefone,plogin,psenha);
+		Cliente cliente = new Cliente();
 		RequestDispatcher view = null;
 
-		cliente.verificacao();
-		request.setAttribute("cliente", cliente.getTO());
-		view = request.getRequestDispatcher("VisualizarCliente.jsp");
-		view.forward(request, response);
 	}
 
 	public int busca(Cliente cliente, ArrayList<ClienteTO> lista) {

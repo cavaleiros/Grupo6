@@ -6,14 +6,7 @@ public class Cliente {
 	private String nome,email,login,senha;
 	private String cpf,telefone;
 	
-	public Cliente(String nome,String email,String cpf,String login,String senha,String telefone) {
-		this.nome = nome;
-		this.email = email;
-		this.cpf = cpf;
-		this.login = login;
-		this.senha = senha;
-		this.telefone= telefone;
-	}
+
 	public int getId() {
 		return id;
 	}
@@ -57,55 +50,54 @@ public class Cliente {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	public void criar() {
-		ClienteDAO dao = new ClienteDAO();
-		ClienteTO to = getTO();
-		dao.incluir(to);
-		this.id = to.getId();
-	}
-	public ClienteTO getTO() {
-		ClienteTO to = new ClienteTO();
-		to.setNome(nome);
-		to.setEmail(email);
-		to.setCpf(cpf);		
-		to.setTelefone(telefone);
-		to.setLogin(login);
-		to.setSenha(senha);
-		return to;
-	}
-	public void excluir() {
-		ClienteDAO dao = new ClienteDAO();
-		ClienteTO to = new ClienteTO();
-		to.setNome(nome);
-		dao.excluir(to);
-	}
 
-	public void verificacao() {
-		ClienteDAO dao = new ClienteDAO();
-		ClienteTO to = new ClienteTO();
-		to.setLogin(login);
-		to.setSenha(senha);
-	}
-	
-	public void alterar() {
-		ClienteDAO dao = new ClienteDAO();
-		ClienteTO to = new ClienteTO();
-		to.setNome(nome);
-		to.setEmail(email);
-		to.setCpf(cpf);
-		to.setTelefone(telefone);
-		to.setLogin(login);
-		to.setSenha(senha);
-}
 	
 	@Override
-	public String toString() {
-		return "Cliente:"
-				+ "\nnome: " + nome 
-				+ ", email: " + email 
-				+ ", cpf: " + cpf 
-				+ ", telefone: " + telefone 
-				+ ", Login:" + login 
-				+ ", senha: " + senha;
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
+			return false;
+		if (cpf == null) {
+			if (other.cpf != null)
+				return false;
+		} else if (!cpf.equals(other.cpf))
+			return false;
+		if (login == null) {
+			if (other.login != null)
+				return false;
+		} else if (!login.equals(other.login))
+			return false;
+		if (senha == null) {
+			if (other.senha != null)
+				return false;
+		} else if (!senha.equals(other.senha))
+			return false;
+		if (telefone == null) {
+			if (other.telefone != null)
+				return false;
+		} else if (!telefone.equals(other.telefone))
+			return false;
+		if (id != other.id)
+			return false;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		return true;
 	}
 }

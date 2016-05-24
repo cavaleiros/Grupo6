@@ -36,7 +36,7 @@ public class ClienteDAO {
    }
 
 	
-   public void excluir(ClienteTO to) {
+   public void excluir(Cliente to) {
       String sqlDelete = "DELETE FROM cliente WHERE nome_cliente = ?";
    	// usando o try with resources do Java 7, que fecha o que abriu
       try (Connection conn = ConnectionFactory.obtemConexao();
@@ -49,7 +49,7 @@ public class ClienteDAO {
       }
    }
 	
-   public void verificacao(ClienteTO to) {
+   public void verificacao(Cliente to) {
       String sqlVerificacao = "select * from cliente where login_cliente=? and senha_cliente=?";
    	// usando o try with resources do Java 7, que fecha o que abriu
       try (Connection conn = ConnectionFactory.obtemConexao();
@@ -62,8 +62,8 @@ public class ClienteDAO {
          e.printStackTrace();
       }
    }
-   public ClienteTO carregar(int id) {
-      ClienteTO to = new ClienteTO();
+   public Cliente carregar(int id) {
+      Cliente to = new Cliente();
       to.setId(id);
       String sqlSelect = "SELECT nome, telefone, email FROM cliente WHERE	cliente.id = ?";
    	// usando o try with resources do Java 7, que fecha o que abriu
@@ -90,8 +90,8 @@ public class ClienteDAO {
       return to;
    }
 					
-   public ClienteTO alterar(int id) {
-      ClienteTO to = new ClienteTO();
+   public Cliente alterar(int id) {
+      Cliente to = new Cliente();
       String sqlSelect = "SELECT nome_cliente, telefone_cliente FROM cliente WHERE nome_cliente,email_cliente,cpf_cliente,telefone_cliente,login_cliente,senha_cliente = ?,?,?,?,?,?";
    				// usando o try with resources do Java 7, que fecha o que abriu
       try (Connection conn = ConnectionFactory.obtemConexao();
