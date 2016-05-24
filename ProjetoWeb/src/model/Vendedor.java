@@ -1,8 +1,9 @@
-package Cliente;
+package model;
 
 import java.util.ArrayList;
-import ClienteTO.ClienteTO;
-import ClienteDAO.ClienteDAO;
+
+import dao.ClienteDAO;
+import to.ClienteTO;
 
 public class Vendedor {
 	public ArrayList<ClienteTO> listarClientes(){

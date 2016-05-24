@@ -8,8 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import Cliente.Cliente;
-import ClienteTO.ClienteTO;
+import model.Cliente;
+import to.ClienteTO;
 
 public class VisualizarCliente implements Command {
 

@@ -1,6 +1,7 @@
 package Controller;
-import Cliente.Cliente;
-import ClienteTO.ClienteTO;
+import model.Cliente;
+import to.ClienteTO;
+
 import java.io.IOException;
 import java.sql.SQLException;
 

@@ -7,7 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import Cliente.Cliente;
+import model.Cliente;
 
 public class EditarCliente implements Command {
 

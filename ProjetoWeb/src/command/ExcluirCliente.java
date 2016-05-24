@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import Cliente.Cliente;
-import ClienteTO.ClienteTO;
+import model.Cliente;
+import to.ClienteTO;
 
 public class ExcluirCliente implements Command {
 

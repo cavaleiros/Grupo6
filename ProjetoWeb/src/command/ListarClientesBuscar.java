@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import Cliente.Vendedor;
-import ClienteTO.ClienteTO;
+import model.Vendedor;
+import to.ClienteTO;
 
 public class ListarClientesBuscar implements Command {
 

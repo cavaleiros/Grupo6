@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
  
 <!DOCTYPE html>
 <html>
@@ -36,7 +37,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <div class="container">
 
-	<form class="form_login" method="post" action="cadastrando.jsp">
+	<form class="form_login" method="post" action="controller.do">
 		<label>Nome</label>
 		<input type="text" name="nome" id="nome" required>
 		<label>E-mail</label> 
@@ -50,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<label>Senha</label>
 		<input type="password" name="senha" id="senha" required>
 		<div class="clearfix"></div>
-		<input type="submit" value="Cadastrar" name="acao">
+		<input type="submit" value="Cadastrar" name="command" value="CriarCliente">
 	</form>
 </div>
 </div>

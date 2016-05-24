@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.annotation.*;
 
-import Cliente.Cliente;
-import ClienteTO.ClienteTO;
 import command.Command;
-import ClienteDAO.ClienteDAO;
+import dao.ClienteDAO;
+import model.Cliente;
+import to.ClienteTO;
 
 public class CriarCliente implements Command {
 
@@ -42,7 +42,7 @@ public class CriarCliente implements Command {
 		ArrayList<ClienteTO> lista = new ArrayList<>();
 		lista.add(cliente.getTO());
 		session.setAttribute("lista", lista);
-		RequestDispatcher view =  request.getRequestDispatcher("ListarClientes.jsp");
+		RequestDispatcher view =  request.getRequestDispatcher("cadastro.jsp");
 		view.forward(request, response);
 	}
 }

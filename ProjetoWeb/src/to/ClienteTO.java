@@ -1,4 +1,4 @@
-package ClienteTO;
+package to;
 
 public class ClienteTO {
 	private int id;

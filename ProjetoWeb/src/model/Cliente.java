@@ -1,6 +1,6 @@
-package Cliente;
-import ClienteTO.ClienteTO;
-import ClienteDAO.ClienteDAO;
+package model;
+import dao.ClienteDAO;
+import to.ClienteTO;
 public class Cliente {
 	private int id;
 	private String nome,email,login,senha;
