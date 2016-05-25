@@ -74,10 +74,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  </select>
 									</div>
 									<div class="rtm text-center">
-										<a href="#">Assista o filme!</a>
+										<a href="comprar.jsp">Comprar o FIlme!</a>
 									</div>
 									<div class="wt text-center">
-										<a href="#">Assista o trailer!</a>
+										<a href="filme.jsp">Sinopse do FIlme</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -133,10 +133,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  </select>
 									</div>
 									<div class="rtm text-center">
-										<a href="#">Assista o filme!</a>
+										<a href="comprar.jsp">Comprar o FIlme!</a>
 									</div>
 									<div class="wt text-center">
-										<a href="#">Assista o trailer!</a>
+										<a href="filme.jsp">Sinopse do FIlme</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -192,10 +192,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  </select>
 									</div>
 									<div class="rtm text-center">
-										<a href="#">Assista o filme!</a>
+										<a href="comprar.jsp">Comprar o FIlme!</a>
 									</div>
 									<div class="wt text-center">
-										<a href="#">Assista o trailer!</a>
+										<a href="filme.jsp">Sinopse do FIlme</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -251,10 +251,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  </select>
 									</div>
 									<div class="rtm text-center">
-										<a href="#">Assista o filme!</a>
+										<a href="comprar.jsp">Comprar o FIlme!</a>
 									</div>
 									<div class="wt text-center">
-										<a href="#">Assista o trailer!</a>
+										<a href="filme.jsp">Sinopse do FIlme</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -310,10 +310,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  </select>
 									</div>
 									<div class="rtm text-center">
-										<a href="#">Assista o filme!</a>
+										<a href="comprar.jsp">Comprar o FIlme!</a>
 									</div>
 									<div class="wt text-center">
-										<a href="#">Assista o trailer!</a>
+										<a href="filme.jsp">Sinopse do FIlme</a>
 									</div>
 									<div class="clearfix"></div>
 								</div>

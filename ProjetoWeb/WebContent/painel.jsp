@@ -156,7 +156,7 @@
 							<p><span class="rupees">$620.87</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>					 
@@ -169,7 +169,7 @@
 							<p><span class="rupees">$620.87</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -183,7 +183,7 @@
 							<p><span class="rupees">$899.75</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -197,7 +197,7 @@
 							<p><span class="rupees">$599.00</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -210,7 +210,7 @@
 							<p><span class="rupees">$679.87</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>				     
@@ -230,7 +230,7 @@
 							<p><span class="rupees">$620.87</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -244,7 +244,7 @@
 							<p><span class="rupees">$620.87</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -258,7 +258,7 @@
 							<p><span class="rupees">$899.75</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -272,7 +272,7 @@
 							<p><span class="rupees">$599.00</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
@@ -285,7 +285,7 @@
 							<p><span class="rupees">$679.87</span></p>
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Adicione ao Carrinho</a></h4>
+									<h4><a href="filme.jsp">Comprar FIlme</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					 </div>				     

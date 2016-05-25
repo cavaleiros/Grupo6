@@ -51,9 +51,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<label>Senha</label>
 		<input type="password" name="senha" id="senha" required>
 		<div class="clearfix"></div>
-		<input type="submit" value="Cadastrar" name="command" value="CriarCliente">
+		<a  href="#" id="teste" clas="deucerto" style="float:right;
+	padding:0.6em 1em;
+	margin-top:4%;
+	background:transparent;
+	border:1px solid #777;
+	border-radius:12px;
+	border:1px solid #fff;
+	color:#fff;">Logar</a>
 	</form>
 </div>
+<script type="text/javascript">
+	
+	$('#teste').click(function(){
+		
+			alert("Cadastrado com Sucesso!"); 
+			window.location = "painel.jsp";
+		});
+		
+	
+	</script>
 </div>
 </div>
 </div>

@@ -34,7 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<a href="single.html"><img src="images/r4.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="single.html">Lorem  <i>Movie Review</i></a><br/>
+								<a class="span" href="single.html">Interstellar</a><br/>
 		                          						
 								<p class="ratingview">Avaliação dos críticos:</p>
 								<div class="rating">
@@ -74,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  </select>
 									</div>
 									<div class="rtm text-center">
-										<a href="#">Assista o filme!</a>
+										<a href="comprar.jsp">Comprar</a>
 									</div>
 									<div class="wt text-center">
 										<a href="#">Assista o trailer!</a>

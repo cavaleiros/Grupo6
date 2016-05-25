@@ -38,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
 		 <script>
 				$(document).ready(function() {
-				$('.popup-with-zoom-anim').magnificPopup({
+				$('.').magnificPopup({
 					type: 'inline',
 					fixedContentPos: false,
 					fixedBgPos: true,
@@ -56,140 +56,131 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<div class="content-grids">
 					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum1.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum1.jpg" title="allbum-name" /></a>
+						<h3>Anabelle</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div id="small-dialog" class="mfp-hide">
 						<iframe  src="https://www.youtube.com/embed/2LqzF5WauAw" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum2.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum2.jpg" title="allbum-name" /></a>
+						<h3>Batman </h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum3.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum3.jpg" title="allbum-name" /></a>
+						<h3>A origem</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid last-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum4.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum4.jpg" title="allbum-name" /></a>
+						<h3>American Pie</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum5.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum5.jpg" title="allbum-name" /></a>
+						<h3>Batman vs Superman</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum6.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum6.jpg" title="allbum-name" /></a>
+						<h3>Corações de Ferro</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum7.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum7.jpg" title="allbum-name" /></a>
+						<h3>E ai Comeu?</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid last-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum8.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum8.jpg" title="allbum-name" /></a>
+						<h3>Garota Exemplar</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum9.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum9.jpg" height="322" title="allbum-name" /></a>
+						<h3>Homem Formiga</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum10.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum10.jpg" height="322" title="allbum-name" /></a>
+						<h3>Jurassic World</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum11.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum11.jpg" title="allbum-name" /></a>
+						<h3>Mad Max</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="content-grid last-grid">
-						<a class="play-icon popup-with-zoom-anim" href="filmes.jsp"><img src="images/gridallbum1.jpg" title="allbum-name" /></a>
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+						<a class="play-icon " href="filmes.jsp"><img src="images/gridallbum12.jpg" title="allbum-name" /></a>
+						<h3>Minions</h3>
 						<ul>
 							<li><a href="#"><img src="images/likes.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/views.png" title="image-name" /></a></li>
 							<li><a href="#"><img src="images/link.png" title="image-name" /></a></li>
 						</ul>
-						<a class="button play-icon popup-with-zoom-anim" href="filmes.jsp">Assistir agora</a>
+						<a class="button play-icon " href="filme.jsp">Compre agora</a>
 					</div>
 					<div class="clearfix"> </div>
 					<!---start-pagenation----->
-					<div class="pagenation">
-						<ul>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">Próximo</a></li>
-						</ul>
-					</div>
+					
 					<div class="clearfix"> </div>
 					<!---End-pagenation----->
 				</div>
