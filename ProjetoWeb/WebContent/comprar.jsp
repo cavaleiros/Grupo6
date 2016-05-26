@@ -31,7 +31,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-9 reviews-grids">
 						<div class="review">
 							<div class="movie-pic">
-								<a href="single.html"><img src="images/r4.jpg" alt="" /></a>
+								<a href="filme.jsp"><img src="images/gridallbum5.jpg" alt="" /></a>
 							</div>
 							<div class="form_compra">
 							<form method="post" action="comprado.jsp">
@@ -105,27 +105,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h3>Filmes mais acessados hoje</h3>
 							<ul>
 								<li>
-									<a href="single.html"><img src="images/f1.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f1.jpg" alt="" /></a>
 									<p>Plaguers</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f2.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f2.jpg" alt="" /></a>
 									<p>Padre</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f3.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f3.jpg" alt="" /></a>
 									<p>Avatar</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f4.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f4.jpg" alt="" /></a>
 									<p>Jurassic Park</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f5.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f5.jpg" alt="" /></a>
 									<p>Jogos Vorazes</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f6.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f6.jpg" alt="" /></a>
 									<p>foto pra muda</p>
 								</li>
 								<div class="clearfix"></div>

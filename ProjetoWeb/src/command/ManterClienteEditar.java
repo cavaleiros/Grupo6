@@ -22,6 +22,7 @@ public class ManterClienteEditar implements Command {
 		String ptelefone= request.getParameter("telefone");
 		String plogin = request.getParameter("login");
 		String psenha = request.getParameter("senha");
+		int pid2 = Integer.parseInt(pId);
 		
 		int id = -1;
 		try {
@@ -30,7 +31,7 @@ public class ManterClienteEditar implements Command {
 
 		}
 
-		ClienteService ClienteService = new ClienteService(pId,pAcao,pnome,pemail,pcpf,ptelefone);
+		ClienteService ClienteService = new ClienteService(pid2,pAcao,pnome,pemail,pcpf,ptelefone, psenha);
 		RequestDispatcher view = null;
 
 		ClienteService.carregar();

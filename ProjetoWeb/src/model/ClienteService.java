@@ -5,7 +5,8 @@ import dao.ClienteDAO;
 public class ClienteService {
 	private Cliente data = new Cliente();
 
-	public ClienteService(String nome,String email,String cpf,String login,String senha,String telefone) {
+	public ClienteService(int pId,String nome,String email,String cpf,String login,String senha,String telefone) {
+		this.data.setId(pId);
 		this.data.setNome(nome);
 		this.data.setEmail(email);
 		this.data.setCpf(cpf);

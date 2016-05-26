@@ -3,6 +3,7 @@ package model;
 import java.util.ArrayList;
 
 import dao.ClienteDAO;
+import dao.UsuarioDAO;
 import to.ClienteTO;
 
 public class VendedorService {
@@ -18,5 +19,16 @@ public class VendedorService {
 		lista = dao.listarClientes(chave);
 		return lista;
 	}
-
+	public ArrayList<Usuario> listarUsuarios(){
+		ArrayList<Usuario> lista;
+		UsuarioDAO dao = new UsuarioDAO();
+		lista = dao.listarUsuarios();
+		return lista;
+	}
+	public ArrayList<Usuario> listarUsuarios(String chave){
+		ArrayList<Usuario> lista;
+		UsuarioDAO dao = new UsuarioDAO();
+		lista = dao.listarUsuarios(chave);
+		return lista;
+	}
 }

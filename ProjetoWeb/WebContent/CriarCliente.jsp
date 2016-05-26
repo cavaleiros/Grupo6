@@ -57,7 +57,7 @@
             <hr />
             <div id="actions" class="row">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary" name="command" value="CriarCliente">Salvar</button>
+                    <button type="submit" class="btn btn-primary" name="command" value="ManterClienteCriar">Salvar</button>
                     <a href="painel-admin.jsp" class="btn btn-default">Cancelar</a>
                 </div>
             </div>

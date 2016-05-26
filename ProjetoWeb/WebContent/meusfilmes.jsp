@@ -32,7 +32,7 @@
 					<div class="account_desc">
 						<ul>
 							<li><a href="#" id="sair">Sair</a></li>
-							<li><a href="#">Minha Conta</a></li>
+							<li><a href="painel.jsp">Minha Conta</a></li>
 						</ul>
 					</div>
 				<div class="clear"></div>
@@ -139,68 +139,68 @@
     	</div>
 	      <div class="section group">
 				<div class="grid_1_of_5 images_1_of_5">
-					 <a href="preview.html"><img src="images-painel/end-game.jpg" alt="" /></a>
-					 <h2><a href="preview.html">End Game</a></h2>
+					 <a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/end-game.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >End Game</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>					 
 				</div>
 				<div class="grid_1_of_5 images_1_of_5">
-					 <a href="preview.html"><img src="images-painel/Sorority_Wars.jpg" alt="" /></a>
-					 <h2><a href="preview.html">Sorority Wars</a></h2>
+					 <a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/Sorority_Wars.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Sorority Wars</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 					 
 				</div>
 				<div class="grid_1_of_5 images_1_of_5">
-					<a href="preview.html"><img src="images-painel/New-Moon-The-Score-cover-twilight.jpg" alt="" /></a>
-					 <h2><a href="preview.html">Twilight New Moon</a></h2>
+					<a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/New-Moon-The-Score-cover-twilight.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Twilight New Moon</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				    
 				</div>
 				<div class="grid_1_of_5 images_1_of_5">
-					<a href="preview.html"><img src="images-painel/avatar_movie.jpg" alt="" /></a>
-					 <h2><a href="preview.html">Avatar</a></h2>
+					<a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/avatar_movie.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Avatar</a></h2>
 					 <div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_5 images_1_of_5">
-					<a href="preview.html"><img src="images-painel/black-swan.jpg" alt="" /></a>
-					 <h2><a href="preview.html">Black Swan</a></h2>
+					<a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/black-swan.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Black Swan</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>				     
@@ -213,69 +213,69 @@
     	  </div>
 			<div class="section group">
 				<div class="grid_1_of_5 images_1_of_5">
-					 <a href="preview.html"><img src="images-painel/beauty_and_the_beast.jpg" alt="" /></a>
-					 <h2><a href="preview.html">Beauty and the beast</a></h2>
+					 <a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/beauty_and_the_beast.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Beauty and the beast</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 					 
 				</div>
 				<div class="grid_1_of_5 images_1_of_5">
-					 <a href="preview.html"><img src="images-painel/Eclipse.jpg" alt="" /></a>
-					 <h2><a href="preview.html">Eclipse</a></h2>
+					 <a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/Eclipse.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Eclipse</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 					 
 				</div>
 				<div class="grid_1_of_5 images_1_of_5">
-					<a href="preview.html"><img src="images-painel/Coraline.jpg" alt="" /></a>
-					 <h2><a href="preview.html">Coraline</a></h2>
+					<a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/Coraline.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Coraline</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				    
 				</div>
 				<div class="grid_1_of_5 images_1_of_5">
-					<a href="preview.html"><img src="images-painel/Unstoppable.jpg" alt="" /></a>
-					 <h2><a href="preview.html">Unstoppable</a></h2>
+					<a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/Unstoppable.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Unstoppable</a></h2>
 					 <div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				</div>
 				<div class="grid_1_of_5 images_1_of_5">
-					<a href="preview.html"><img src="images-painel/Priest.jpg" alt="" /></a>
-					 <h2><a href="preview.html">Priest 3D</a></h2>
+					<a class="button play-icon popup-with-zoom-anim" href="#small-dialog" ><img src="images-painel/Priest.jpg" alt="" /></a>
+					 <h2><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Priest 3D</a></h2>
 					<div class="price-details">
 				       <div class="price-number">
 							
 					    </div>
 					       		<div class="add-cart">								
-									<h4><a href="#">Assista Agora!</a></h4>
+									<h4><a class="button play-icon popup-with-zoom-anim" href="#small-dialog" >Assista Agora</a></h4>
 							     </div>
 							 <div class="clear"></div>
 					 </div>				     
@@ -293,18 +293,18 @@
 						<li><a href="#">Sobre</a></li>
 						<li><a href="#">Serviço Customizado</a></li>
 						<li><a href="#">Busca Avançada</a></li>
-						<li><a href="contact.html">Contato</a></li>
+						<li><a href="contato.jsp">Contato</a></li>
 						</ul>
 					</div>
 				
 				<div class="col_1_of_4 span_1_of_4 tamanho" >
 					<h4>Minha Conta</h4>
 						<ul>
-							<li><a href="contact.html">Sair</a></li>
-							<li><a href="index.html">Carrinho de Compras</a></li>
+							<li><a href="#" id="sair">Sair</a></li>
+							<li><a href="#">Carrinho de Compras</a></li>
 							<li><a href="#">Favoritos</a></li>
 							<li><a href="#">Meus Pedidos</a></li>
-							<li><a href="contact.html">Ajuda</a></li>
+							<li><a href="#">Ajuda</a></li>
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4 tamanho" >
@@ -331,13 +331,36 @@
 		   </div>			
 -->
         </div>
+        <div id="small-dialog" class="mfp-hide">
+					
+						<iframe  src="https://www.youtube.com/embed/2LqzF5WauAw" frameborder="0" allowfullscreen></iframe>
+									
+					</div>
     </div>
+    <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		 <script>
+				$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});
+				});
+		</script>	
     <script type="text/javascript">
 		$(document).ready(function() {			
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			
 		});
 	</script>
+	
     <a href="#" id="toTop"><span id="toTopHover"> </span></a>
 </body>
 </html>

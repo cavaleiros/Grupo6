@@ -27,6 +27,7 @@ public class ManterClienteAlterar implements Command {
 		String ptelefone= request.getParameter("telefone");
 		String plogin = request.getParameter("login");
 		String psenha = request.getParameter("senha");
+		int pid2 = Integer.parseInt(pId);
 		int id = -1;
 		try {
 			id = Integer.parseInt(pId);
@@ -34,7 +35,7 @@ public class ManterClienteAlterar implements Command {
 
 		}
 
-		ClienteService ClienteService = new ClienteService(psenha, psenha, psenha, psenha, psenha, psenha);
+		ClienteService ClienteService = new ClienteService(pid2, pnome, pemail,pcpf, ptelefone,plogin,psenha);
 		RequestDispatcher view = null;
 		HttpSession session = request.getSession();
 

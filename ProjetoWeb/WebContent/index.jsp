@@ -35,8 +35,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p class="review reviewgo">Genero	: Animação, Ação, Comédia</p>
 				<p class="review">Lançamento: 7 Novembro 2014</p>
 				<p class="special">The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.</p>
-				<a class="book" href="#"><i class="book1"></i>Comprar Agora</a>
-				<a class="video" href="#"><i class="video1"></i>Assista o Trailer</a>
+				<a class="book" href="filmes.jsp"><i class="book1"></i>Comprar Agora</a>
+				<!--  <a class="video button play-icon popup-with-zoom-anim" href="#small-dialog" ><i class="video1"></i>Assista o Trailer</a>-->
 			</div>
 		</div>
 		<div class="review-slider">
@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>Não deixe para depois,</h3>
 				<h2>Compre agora seu filme!</h2>
 				<h4>Fácil, Simples e Rápido.</h4>
-				<a href="#"><i class="book"></i>Comprar Agora</a>
+				<a href="filmes.jsp"><i class="book"></i>Comprar Agora</a>
 				<p>Desconto de  <strong>30%</strong> em sua primeira compra!</p>
 			</div>
 			<div class="col-md-6 news-right-grid">
@@ -99,7 +99,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<label>18 Abril 2016</label>
 					<p>Beneditch Cumberbatch estrela o filme com o Dr. Estranho.<br>Dr.Estranho estreia no dia 03 de Novembro deste ano!</p>
 				</div>
-				<a class="more" href="#">Veja Mais</a>
+				<a class="more" href="filmes.jsp">Veja Mais</a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -110,6 +110,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<li ><img src="images/5.jpg" alt="" style="width:230px;height:300px;"/ ></li>
 			<li ><img src="images/16.png" alt="" style="width:230px;height:300px;"/></li>
 		</ul>
+		  <div id="small-dialog" class="mfp-hide">
+					
+						<iframe  src="https://www.youtube.com/embed/2LqzF5WauAw" frameborder="0" allowfullscreen></iframe>
+									
+					</div>
 			<script type="text/javascript">
 		$(window).load(function() {
 			
@@ -139,7 +144,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>	
-		
+		   <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		 <script>
+				$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});
+				});
+		</script>	
 	</div>
 	</div>
 	<div class="clearfix"></div>

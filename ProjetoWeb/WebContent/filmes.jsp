@@ -31,10 +31,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-9 reviews-grids">
 						<div class="review">
 							<div class="movie-pic">
-								<a href="filme.jsp"><img src="images/r4.jpg" alt="" /></a>
+								<a href="filme.jsp"><img src="images/gridallbum5.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="filme.jsp">Lorem  <i>Movie Review</i></a><br/>
+								<a class="span" href="filme.jsp">Batman vs Superman - A Origem da Justiça </a><br/>
 																
 								<p class="ratingview">Avaliação dos críticos:</p>
 								<div class="rating">
@@ -93,7 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<a href="filme.jsp"><img src="images/r6.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="filme.jsp">Lorem  <i>Movie Review</i></a><br/>
+								<a class="span" href="filme.jsp">Big Hero</a><br/>
 								
 								<p class="ratingview">Avaliação dos críticos:</p>
 								<div class="rating">
@@ -152,7 +152,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<a href="filme.jsp"><img src="images/r5.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="filme.jsp">Lorem  <i>Movie Review</i></a><br/>
+								<a class="span" href="filme.jsp">Planeta dos Macacos</a><br/>
 								
 								<p class="ratingview">Avaliação dos críticos:</p>
 								<div class="rating">
@@ -211,7 +211,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<a href="filme.jsp"><img src="images/r1.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="filme.jsp">Lorem  <i>Movie Review</i></a><br/>
+								<a class="span" href="filme.jsp">Lego</a><br/>
 								
 								<p class="ratingview">Avaliação dos críticos:</p>
 								<div class="rating">
@@ -270,7 +270,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<a href="filme.jsp"><img src="images/r3.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="filme.jsp">Lorem  <i>Movie Review</i></a><br/>
+								<a class="span" href="filme.jsp">Vingadores</a><br/>
 		                          						
 								<p class="ratingview">Avaliação dos críticos:</p>
 								<div class="rating">

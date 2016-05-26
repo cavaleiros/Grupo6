@@ -25,8 +25,7 @@ public class VisualizarCliente implements Command {
 		String ptelefone= request.getParameter("telefone");
 		String plogin = request.getParameter("login");
 		String psenha = request.getParameter("senha");
-		int pcpf2 = Integer.parseInt(pcpf);
-		int psenha2 = Integer.parseInt(psenha);
+
 		int id = -1;
 		try {
 			id = Integer.parseInt(pId);

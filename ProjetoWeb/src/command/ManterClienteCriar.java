@@ -11,10 +11,10 @@ import javax.servlet.http.HttpSession;
 
 import model.Cliente;
 import model.ClienteService;
-import to.ClienteTO;
 
-public class ManterClienteExcluir implements Command {
+public class ManterClienteCriar implements Command {
 
+	@Override
 	public void executa(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String pId = request.getParameter("id");
@@ -25,8 +25,6 @@ public class ManterClienteExcluir implements Command {
 		String ptelefone= request.getParameter("telefone");
 		String plogin = request.getParameter("login");
 		String psenha = request.getParameter("senha");
-		int pid2 = Integer.parseInt(pId);
-	
 		int id = -1;
 		try {
 			id = Integer.parseInt(pId);
@@ -34,29 +32,14 @@ public class ManterClienteExcluir implements Command {
 
 		}
 
-		ClienteService clienteService = new ClienteService(pid2, pnome, pemail,pcpf, ptelefone,plogin,psenha);
-		RequestDispatcher view = null;
+		ClienteService clienteService = new ClienteService(id, pnome, pemail, pcpf, ptelefone, plogin, psenha);
 		HttpSession session = request.getSession();
 
-		clienteService.excluir();
-		@SuppressWarnings("unchecked")
-		ArrayList<Cliente> lista = (ArrayList<Cliente>) session
-				.getAttribute("lista");
-		lista.remove(busca(clienteService, lista));
+		clienteService.criar();
+		ArrayList<Cliente> lista = new ArrayList<>();
+		lista.add(clienteService.getData());
 		session.setAttribute("lista", lista);
-		view = request.getRequestDispatcher("ListarClientes.jsp");
+		RequestDispatcher view =  request.getRequestDispatcher("ListarClientes.jsp");
 		view.forward(request, response);
 	}
-
-	public int busca(ClienteService clienteService, ArrayList<Cliente> lista) {
-		Cliente to;
-		for (int i = 0; i < lista.size(); i++) {
-			to = lista.get(i);
-			if (to.getId() == clienteService.getId()) {
-				return i;
-			}
-		}
-		return -1;
-	}
-
 }

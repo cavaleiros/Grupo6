@@ -33,12 +33,17 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="fone">Celular</label>
-                                <input type="tel" class="form-control" name="fone" id="fone" maxlength="15" pattern="(?:\(\d{2}\)|\d{2})[- ]?\d{5}[- ]?\d{4}" placeholder="opcional; celular com ddd no formato (99) 99999-9999" value="${cliente.fone }">
+                                <input type="tel" class="form-control" name="telefone" id="telefone" maxlength="15" pattern="(?:\(\d{2}\)|\d{2})[- ]?\d{5}[- ]?\d{4}" placeholder="opcional; celular com ddd no formato (99) 99999-9999" value="${cliente.telefone }">
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="email">E-Mail</label>
                                 <input type="email" class="form-control" name="email" id="email" required maxlength="60" placeholder="email obrigatório" value="${cliente.email }">
+                            </div>
+                            
+                            <div class="form-group col-md-6">
+                                <label for="fone">CPF</label>
+                                <input type="cpf" class="form-control" name="cpf" id="cpf" maxlength="11" placeholder="Digite o nome CPF" value="${cliente.cpf }">
                             </div>
                         </div>
                         <hr />

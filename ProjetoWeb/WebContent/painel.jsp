@@ -32,7 +32,7 @@
 					<div class="account_desc">
 						<ul>
 							<li><a href="#" id="sair">Sair</a></li>
-							<li><a href="#">Minha Conta</a></li>
+							<li><a href="painel.jsp">Minha Conta</a></li>
 						</ul>
 					</div>
 				<div class="clear"></div>
@@ -310,11 +310,11 @@
 				<div class="col_1_of_4 span_1_of_4 tamanho" >
 					<h4>Minha Conta</h4>
 						<ul>
-							<li><a href="contact.html">Sair</a></li>
-							<li><a href="index.html">Carrinho de Compras</a></li>
+							<li><a href="#" id="sair">Sair</a></li>
+							<li><a href="#">Carrinho de Compras</a></li>
 							<li><a href="#">Favoritos</a></li>
 							<li><a href="#">Meus Pedidos</a></li>
-							<li><a href="contact.html">Ajuda</a></li>
+							<li><a href="#">Ajuda</a></li>
 						</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4 tamanho" >

@@ -31,10 +31,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-9 reviews-grids">
 						<div class="review">
 							<div class="movie-pic">
-								<a href="single.html"><img src="images/r4.jpg" alt="" /></a>
+								<a href="filme.jsp"><img src="images/gridallbum5.jpg" alt="" /></a>
 							</div>
 							<div class="review-info">
-								<a class="span" href="single.html">Interstellar</a><br/>
+								<a class="span" href="filme.jsp">Batman vs Superman - A Origem da Justiça</a><br/>
 		                          						
 								<p class="ratingview">Avaliação dos críticos:</p>
 								<div class="rating">
@@ -77,7 +77,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<a href="comprar.jsp">Comprar</a>
 									</div>
 									<div class="wt text-center">
-										<a href="#">Assista o trailer!</a>
+										<a class="button play-icon popup-with-zoom-anim" href="#small-dialog" style="    margin-top: -3%;">Assista o trailer!</a>
+										
 									</div>
 									<div class="clearfix"></div>
 								</div>
@@ -102,27 +103,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h3>Filmes mais acessados hoje</h3>
 							<ul>
 								<li>
-									<a href="single.html"><img src="images/f1.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f1.jpg" alt="" /></a>
 									<p>Plaguers</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f2.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f2.jpg" alt="" /></a>
 									<p>Padre</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f3.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f3.jpg" alt="" /></a>
 									<p>Avatar</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f4.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f4.jpg" alt="" /></a>
 									<p>Jurassic Park</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f5.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f5.jpg" alt="" /></a>
 									<p>Jogos Vorazes</p>
 								</li>
 								<li>
-									<a href="single.html"><img src="images/f6.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f6.jpg" alt="" /></a>
 									<p>foto pra muda</p>
 								</li>
 								<div class="clearfix"></div>
@@ -133,60 +134,60 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h3>Entretenimento</h3>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f6.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f6.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Assista Agora!<br>muda a foto</a>
+									<a href="filme.jsp">Assista Agora!<br>muda a foto</a>
 								
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f5.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f5.jpg" alt="" /></a>
 								</li>
 									<li>
-									<a href="single.html">Assista Agora!<br>Jogos Vorazes</a>
+									<a href="filme.jsp">Assista Agora!<br>Jogos Vorazes</a>
 							
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f3.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f3.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Assista Agora!<br>Avatar</a>
+									<a href="filme.jsp">Assista Agora!<br>Avatar</a>
 								
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f4.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f4.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Assista Agora!<br>Jurassic Park</a>
+									<a href="filme.jsp">Assista Agora!<br>Jurassic Park</a>
 								
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f2.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f2.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Assista Agora!<br>Padre</a>
+									<a href="filme.jsp">Assista Agora!<br>Padre</a>
 							
 								</li>
 								<div class="clearfix"></div>
 							</ul>
 							<ul>
 								<li class="ent">
-									<a href="single.html"><img src="images/f1.jpg" alt="" /></a>
+									<a href="filme.jsp"><img src="images/f1.jpg" alt="" /></a>
 								</li>
 								<li>
-									<a href="single.html">Assista Agora!<br>Plaguers</a>
+									<a href="filme.jsp">Assista Agora!<br>Plaguers</a>
 								
 								</li>
 								<div class="clearfix"></div>
@@ -196,41 +197,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h4>Deixe seu comentário!</h4>
 				<div class="might-grid">
 					<div class="grid-might">
-						<a href="single.html"><img src="images/mi.jpg" class="img-responsive" alt=""> </a>
+						<a href="filme.jsp"><img src="images/mi.jpg" class="img-responsive" alt=""> </a>
 					</div>
 					<div class="might-top">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-						<a href="single.html">Lorem Ipsum <i> </i></a>
+						<a href="filme.jsp">Lorem Ipsum <i> </i></a>
 					</div>
 				<div class="clearfix"></div>
 				</div>
 				<div class="might-grid">
 					<div class="grid-might">
-						<a href="single.html"><img src="images/mi1.jpg" class="img-responsive" alt=""> </a>
+						<a href="filme.jsp"><img src="images/mi1.jpg" class="img-responsive" alt=""> </a>
 					</div>
 					<div class="might-top">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-						<a href="single.html">Lorem Ipsum <i> </i></a>
+						<a href="filme.jsp">Lorem Ipsum <i> </i></a>
 					</div>
 				<div class="clearfix"></div>
 				</div>
 				<div class="might-grid">
 					<div class="grid-might">
-						<a href="single.html"><img src="images/mi2.jpg" class="img-responsive" alt=""> </a>
+						<a href="filme.jsp"><img src="images/mi2.jpg" class="img-responsive" alt=""> </a>
 					</div>
 					<div class="might-top">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-						<a href="single.html">Lorem Ipsum <i> </i></a>
+						<a href="filme.jsp">Lorem Ipsum <i> </i></a>
 					</div>
 				<div class="clearfix"></div>
 				</div>
 				<div class="might-grid">
 					<div class="grid-might">
-						<a href="single.html"><img src="images/mi3.jpg" class="img-responsive" alt=""> </a>
+						<a href="filme.jsp"><img src="images/mi3.jpg" class="img-responsive" alt=""> </a>
 					</div>
 					<div class="might-top">
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-						<a href="single.html">Lorem Ipsum <i> </i></a>
+						<a href="filme.jsp">Lorem Ipsum <i> </i></a>
 					</div>
 				<div class="clearfix"></div>
 				</div>
@@ -249,6 +250,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<li><img src="images/r5.jpg" alt=""/></li>
 			<li><img src="images/r6.jpg" alt=""/></li>
 		</ul>
+		<div id="small-dialog" class="mfp-hide">
+					<!-- muda o iframe
+						<iframe  src="https://www.youtube.com/embed/2LqzF5WauAw" frameborder="0" allowfullscreen></iframe>
+					-->						
+					</div>
 			<script type="text/javascript">
 		$(window).load(function() {
 			
@@ -278,6 +284,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
 		</div>		
+			<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		 <script>
+				$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});
+				});
+		</script>	
 	</div>
 	<div class="clearfix"></div>
 	</div>
